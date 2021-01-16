@@ -110,7 +110,7 @@ void display(struct TrieNode* root, char str[], int level) {
 
     if (isLeafNode(root))  { 
         str[level] = '\0'; 
-        printf("%s : %d\n",str,root->size); 
+        printf("%s %d\n",str,root->size); 
     } 
   
     int i; 
@@ -127,7 +127,7 @@ void displayR(struct TrieNode* root, char str[],int level) {
     if (isLeafNode(root)) { 
 	
         str[level] = '\0'; 
-        printf("%s : %d\n",str,root->size); 
+        printf("%s %d\n",str,root->size); 
  
     } 
 
