@@ -162,11 +162,11 @@ int main(int argc, char* argv[]){
             int i;
             for (i = 0; i < strlen(word); i++)
             {
-                if(word[i] >= 'A'|| word[i] <= 'Z'){
+                if(word[i] >= 'A' && word[i] <= 'Z'){
                   word[i] = tolower(word[i]); 
 
                 }
-                if (word[i] < 'a' || word[i] > 'z'){
+                else if (word[i] < 'a' || word[i] > 'z'){
                     word[i] = '\0';
                 } 
             }
